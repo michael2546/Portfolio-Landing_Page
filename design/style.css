@@ -1,0 +1,398 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    background-color: #E5E5E5;
+}
+/* ----------------------------------------- */
+/* hero-section Design */
+
+.hero-section{
+    /* height: 10%; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.hero-section .text{
+    /* margin: 50px 10vw; */
+    padding: 50px;
+    margin: 20px 0;
+    width: 50%;
+
+    /* min-width: 290px; */
+}
+
+.text h1{
+    font-weight: 700;
+}
+.text span{
+    color: #FFB400;
+}
+
+.text p{
+    margin-top: 18px;
+    color: #767676;
+}
+.text button{
+    margin-top: 25px;
+    width: 154px;
+    height: 51px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FFB400;
+    outline: none;
+    border: 0;
+    font-weight: 500;
+} 
+.text button i{
+    margin-left: 10px;
+    
+}
+.hero-section img{
+    /* margin-top: 10px; */
+    padding: 10px;
+    /* max-width: 100%;
+    height: auto; */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 448px;
+}
+
+/* ---------------------------------------- */
+/* services Design */
+
+
+.headline{
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.headline-info{
+    margin: 20px auto;
+}
+
+.headline p{
+    color: #767676;
+}
+
+.headline h2{
+    font-weight: 700;
+}
+
+
+
+.cards{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.card{
+    /* object-fit: cover;
+    width: 100%;
+    height: 100%; */
+    width: 27%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+.card-content{
+    margin: 15px;
+}
+
+.card a{
+    text-decoration: none;
+    color: #FFB400;
+    font-weight: 700;
+}
+ .card p{
+    color: #767676;
+ }
+
+
+/* -------------------------------------------------- */
+/* protfolio */
+
+.photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+    width: 85%;
+    margin: auto;
+}
+.photo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+}
+
+.photo img{
+    width: 100%;
+    
+}
+
+.photo i{
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 40px;
+}
+.photo::after{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity:0.9;
+    transform: 0.5s;
+}
+
+.photo:hover::after {
+display: block;
+}
+.photo:hover i{
+    display: block;
+}
+
+/* ----------------------------------------------------------- */
+/*  info  &&  contact*/
+
+.info-contact{
+    width: 85%;
+    height: 100%;
+    margin:30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.info{
+    width: 50%;
+    height: 100%;
+}
+
+.info h1{
+    margin-bottom: 50px;
+}
+
+.info-form{
+    background-color: white;
+}
+
+.info-form label,input,textarea{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.input{
+    padding: 20px;
+}
+.input label {
+    color: #767676;
+    font-weight: 500;
+}
+.input input {
+    background-color: #F0F0F6;
+    border: 0;
+    height: 30px;
+    outline: none;
+}
+
+.input textarea{
+    background-color: #F0F0F6;
+    border: 0;
+    outline: none;
+}
+
+.info-form button{
+    width: 150px;
+    height: 30px;
+    margin: 0 0 20px 35px;
+    border: 0;
+    background-color: #FFB400;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.contact{
+    width: 40%;
+    height: 100%;
+
+}
+.contact h1{
+    margin-bottom: 50px;
+}
+
+.contact-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.contact-card{
+    background-color: white;
+    margin: 0px auto 10px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.contact-card .icon{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB400;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+    padding: 10px;
+}
+
+.left{
+    color: #767676;
+}
+.right{
+    color: #767676;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* footer  */
+
+.footer-logo{
+    width: 85%;
+    margin: auto;
+    padding: 50px;
+    
+
+}
+.footer-logo img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+}
+
+@media (max-width: 720px) {
+    .text h1{
+        font-size: 1.7rem;
+    }
+    .text p{
+        font-size: 0.75rem;
+    }
+    .hero-section .profile-photo{
+        width: 100%;
+        max-width: 270px;
+        height: auto;
+        /* max-height: 350px; */
+    }
+    .card{
+        width: 40%;
+    }
+    .info-contact{
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-card{
+        width: 300px;
+    }
+    .contact h1{
+        margin-top: 20px;
+    }
+
+  }
+
+@media  (max-width:425px){
+    .hero-section{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .hero-section img{
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: auto;
+
+    }
+    .hero-section .text{
+        width: 100%;
+        height: 100%;
+        /* flex-wrap: wrap; */
+    }
+    .card{
+        width: 100%;
+
+    }
+
+    .contact-card{
+        width: 200px;
+        font-size: .8rem;
+    }
+
+
+
+    
+}
+
+
+
+
